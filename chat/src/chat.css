@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+.chatApp {
+  background-image: url("./assets/pipework.jpg");
+  width: 100vw;
+  height: 75vh;
+}
+
+.chatPanel {
+  border-color: lightgray;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 50%;
+  height: 300px;
+  overflow: auto;
+}
+
+.messageLeft {
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(47, 209, 47);
+
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 75%;
+  height: 75%;
+  padding: 10px;
+}
+
+.messageRight {
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(112, 116, 112);
+
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 75%;
+  height: 75%;
+  padding: 10px;
+}
