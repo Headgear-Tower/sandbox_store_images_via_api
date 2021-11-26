@@ -1,0 +1,449 @@
+{
+  "dateCreated": "2021-08-17T10:29:21.809Z",
+  "styleSheet": { "chat": "", "webApp": "" },
+  "systemInterfaces": "",
+  "operations": [
+    {
+      "opId": 1,
+      "nextOpId": [2],
+      "type": "broadcast",
+      "subType": "richText",
+      "content": "Hi, my name is Intuition",
+      "triggerIn": { "type": "timeRelative", "value": 200 },
+      "triggerOut": { "type": "timeRelative", "value": 2000 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 2,
+      "nextOpId": [3],
+      "type": "interaction",
+      "subType": "question",
+      "content": {
+        "label": "propertyNumberPlease",
+        "data": "Could you tell me the property or house number where we did the work please?"
+      },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 3,
+      "nextOpId": [4],
+      "type": "interaction",
+      "subType": "response-input",
+      "content": { "label": "propertyNumber" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 4,
+      "nextOpId": [5],
+      "type": "interaction",
+      "subType": "question",
+      "content": {
+        "label": "postCodePlease",
+        "data": "thanks and finally, the post code please?"
+      },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+
+    {
+      "opId": 5,
+      "nextOpId": [],
+      "type": "interaction",
+      "subType": "response-input",
+      "content": { "label": "postCode" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 6,
+      "nextOpId": [7, 8],
+      "type": "interaction",
+      "subType": "question",
+      "content": { "label": "amICorrect", "data": "am I correct?" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 7,
+      "nextOpId": [9],
+      "type": "interaction",
+      "subType": "response-select",
+      "content": { "label": "yes" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 8,
+      "nextOpId": [10],
+      "type": "interaction",
+      "subType": "response-select",
+      "asthetics": { "type": "button" },
+      "content": { "label": "no" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+
+    {
+      "opId": 9,
+      "nextOpId": [12],
+      "type": "broadcast",
+      "subType": "richText",
+      "content": "super thanks...let's start getting your feedback...",
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "timeRelative", "value": 2000 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 10,
+      "nextOpId": [11],
+      "type": "broadcast",
+      "subType": "richText",
+      "content": "ok, our mistake, please give us a call",
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "timeRelative", "value": 2000 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 11,
+      "nextOpId": [],
+      "type": "navigation",
+      "subType": "internal",
+      "content": { "path": "/contact-us" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "timeRelative", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+
+    {
+      "opId": 12,
+      "nextOpId": [13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+      "type": "interaction",
+      "subType": "question",
+      "content": {
+        "label": "installationTeamRating",
+        "data": "How would you rate the team that did the work? (1-very poor, 10-perfect)"
+      },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 13,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "content": { "label": "1", "data": 1 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 14,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "2", "data": 2 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 15,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "3", "data": 3 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+
+    {
+      "opId": 16,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "4", "data": 4 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 17,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "5", "data": 5 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 18,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "6", "data": 6 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 19,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "7", "data": 7 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 20,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "8", "data": 8 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 21,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "9", "data": 9 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 22,
+      "nextOpId": [23],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "10", "data": 10 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+
+    {
+      "opId": 23,
+      "nextOpId": [24, 25, 26, 27, 28, 29, 30, 31, 32, 33],
+      "type": "interaction",
+      "subType": "question",
+      "content": {
+        "label": "standardOfWork",
+        "data": "What did you think of the team's standard of work? (1-very poor, 10-perfect)"
+      },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 24,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "content": { "label": "1", "data": 1 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 25,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "2", "data": 2 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 26,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "3", "data": 3 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+
+    {
+      "opId": 27,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "4", "data": 4 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 28,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "5", "data": 5 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 29,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "6", "data": 6 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 30,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "7", "data": 7 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 31,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "8", "data": 8 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 32,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "9", "data": 9 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 33,
+      "nextOpId": [34],
+      "type": "interaction",
+      "subType": "response-select",
+      "subSubType": "feedback",
+      "asthetics": { "type": "button" },
+      "content": { "label": "10", "data": 10 },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 34,
+      "nextOpId": [35],
+      "type": "broadcast",
+      "subType": "richText",
+      "content": "Ok, that's it. Thanks for your feedback.",
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "timeRelative", "value": 4000 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 35,
+      "nextOpId": [],
+      "type": "broadcast",
+      "subType": "richText",
+      "content": "Have a great day.",
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "timeRelative", "value": 4000 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    }
+  ]
+}

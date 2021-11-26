@@ -1,0 +1,40 @@
+.actorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.typeBroadcast {
+  color: white;
+  background: grey;
+  margin: 1rem;
+  padding: 1rem;
+  border-width: 3px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 15px;
+}
+
+.machineInteraction {
+  color: white;
+  background: grey;
+  margin: 1rem;
+  padding: 1rem;
+  border-width: 3px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 15px;
+}
+
+.humanInteraction {
+  color: white;
+  background: rgb(59, 132, 216);
+  margin: 1rem;
+  padding: 1rem;
+  border-width: 3px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 15px;
+}

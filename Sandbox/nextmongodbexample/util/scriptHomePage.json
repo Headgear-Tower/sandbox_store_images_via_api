@@ -1,0 +1,129 @@
+{
+  "dateCreated": "2021-08-17T10:29:21.809Z",
+  "styleSheet": { "chat": "", "webApp": "" },
+  "systemInterfaces": "",
+  "operations": [
+    {
+      "opId": 1,
+      "nextOpId": [2],
+      "type": "broadcast",
+      "subType": "image",
+      "content": "Gt Gas Logo",
+      "triggerIn": { "type": "timeRelative", "value": 100 },
+      "triggerOut": { "type": "timeRelative", "value": 200 },
+      "transitionIn": "appear",
+      "transitionOut": "floatUpToTop"
+    },
+    {
+      "opId": 2,
+      "nextOpId": [3],
+      "type": "broadcast",
+      "subType": "richText",
+      "content": "Hey, my name is Intuition",
+      "triggerIn": { "type": "timeRelative", "value": 200 },
+      "triggerOut": { "type": "timeRelative", "value": 400 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 3,
+      "nextOpId": [4, 5, 6, 7],
+      "type": "interaction",
+      "subType": "question",
+      "content": "What would you like to do today?",
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 4,
+      "nextOpId": [8],
+      "type": "interaction",
+      "subType": "response-select",
+      "content": "view our services",
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 5,
+      "nextOpId": [9],
+      "type": "interaction",
+      "subType": "response-select",
+      "asthetics": { "type": "button" },
+      "content": "see our work and what our customers say",
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 6,
+      "nextOpId": [10],
+      "type": "interaction",
+      "subType": "response-select",
+      "content": "contact us",
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 7,
+      "nextOpId": [11],
+      "type": "interaction",
+      "subType": "response-select",
+      "content": "leave a review",
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "user", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 8,
+      "nextOpId": [],
+      "type": "navigation",
+      "subType": "internal",
+      "content": { "path": "/energy-services" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "timeRelative", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 9,
+      "nextOpId": [],
+      "type": "navigation",
+      "subType": "internal",
+      "content": { "path": "/reviews" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "timeRelative", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 10,
+      "nextOpId": [],
+      "type": "navigation",
+      "subType": "internal",
+      "content": { "path": "/contact-us" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "timeRelative", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    },
+    {
+      "opId": 11,
+      "nextOpId": [],
+      "type": "navigation",
+      "subType": "internal",
+      "content": { "path": "/reviews/new" },
+      "triggerIn": { "type": "timeRelative", "value": 0 },
+      "triggerOut": { "type": "timeRelative", "value": 0 },
+      "transitionIn": "floatFromMiddleRight",
+      "transitionOut": "floatToMiddleLeft"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.icon {
+  display: grid;
+  place-items: center;
+  width: 5rem;
+  height: 5rem;
+  /* background: grey; */
+  margin: 1rem;
+  border: 3px solid grey;
+  border-radius: 100%;
+}
