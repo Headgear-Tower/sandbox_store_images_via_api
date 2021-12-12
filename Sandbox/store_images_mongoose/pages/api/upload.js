@@ -3,26 +3,26 @@ import fs from "fs";
 
 export const config = {
   api: {
-    bodyParser: false
-  }
+    bodyParser: false,
+  },
 };
 
 const post = async (req, res) => {
-    console.log('working')
-    
+  // console.log("working");
+
   const form = new formidable.IncomingForm();
   form.parse(req, async function (err, fields, files) {
-    console.log(files.file)
+    //console.log(files.file);
     await saveFile(files.file);
     return res.status(201).send("");
   });
 };
 
 const saveFile = async (file) => {
-    //console.log(file.name)
+  //console.log(file.filepath);
   const data = fs.readFileSync(file.filepath);
   fs.writeFileSync(`./public/${file.originalFilename}`, data);
-  await fs.unlinkSync(file.path);
+  await fs.unlinkSync(file.filepath);
   return;
 };
 

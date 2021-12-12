@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-
 import Router from "next/router";
-
-
-
 
 class Upload extends Component {
   constructor(props) {
@@ -13,8 +9,6 @@ class Upload extends Component {
     this.timerRef = null;
   }
 
-
-
   componentWillUnmount() {
     clearTimeout(this.timerRef);
   }
@@ -22,37 +16,39 @@ class Upload extends Component {
   render() {
     return (
       <React.Fragment>
- 
-<form method="POST" action="/api/upload" enctype="multipart/form-data">
-    <div>
-        <label>Select your profile picture:</label>
-        <input type="file" name="profile_pic" />
-    </div>
-    <div>
-        <input type="submit" name="btn_upload_profile_pic" value="Upload" />
-    </div>
-</form>
+        <form method="POST" action="/api/upload" enctype="multipart/form-data">
+          <div>
+            <label>Select your profile picture:</label>
+            <input type="file" name="profile_pic" />
+          </div>
+          <div>
+            <input type="submit" name="btn_upload_profile_pic" value="Upload" />
+          </div>
+        </form>
 
-
-<form method="POST" action="/upload-multiple-images" enctype="multipart/form-data">
-    <div>
-        <label>Select multiple images:</label>
-        <input type="file" name="multiple_images" multiple />
-    </div>
-    <div>
-        <input type="submit" name="btn_upload_multiple_images" value="Upload" />
-    </div>
-</form>
+        <form
+          method="POST"
+          action="/upload-multiple-images"
+          enctype="multipart/form-data"
+        >
+          <div>
+            <label>Select multiple images:</label>
+            <input type="file" name="multiple_images" multiple />
+          </div>
+          <div>
+            <input
+              type="submit"
+              name="btn_upload_multiple_images"
+              value="Upload"
+            />
+          </div>
+        </form>
       </React.Fragment>
     );
   }
 }
 
 export default Upload;
-
-
-
-
 
 // require("dotenv").config();
 // const upload = require("./api/upload");
